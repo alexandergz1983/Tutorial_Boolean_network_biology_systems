@@ -9,7 +9,6 @@ A continuación se muestra un script “completo” en Python en el que tomando 
 El script simula, para cada tamaño de red (definido como el número total de especies; en cada red se usan igual número de plantas y polinizadores) y para cada valor de PEW, un ensamble de 1000 redes generadas aleatoriamente (siguiendo la metodología del artículo: asignación de grados a partir de una ley de potencia con corte, asignación de valores de rasgo a partir de una skew normal y clasificación de las interacciones en función del “match” de rasgos). Luego, para cada red se estudia la dinámica (usando actualización síncrona, con la regla
   estado_i(t+1) = 1 si (∑_j [estado_j(t)·E(j,i)] ≥ 1, 0 en otro caso), con E(j,i) asignado según el criterio descrito) mediante un muestreo Monte Carlo (simulando 1000 estados iniciales aleatorios). Se extraen las siguientes métricas:
 
-![1.png](attachment:1.png)
 
 • Número único de atractores (la Figura 3 muestra el “número promedio de atractores” en cada ensamble; se separa en “A–D” según PEW).
 • La fracción (basin) de estados iniciales que convergen a estados estables (SS) o a ciclos límite (LC) (Figura 4).
